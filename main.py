@@ -13,10 +13,10 @@ if __name__ == '__main__':
     subtitle_url = get_subtitle_info(response)  # 取字幕url
 
     if subtitle_url == 0:
-        print('无自动生成字幕，结束下载字幕.')
+        print('No automatic subtitle generation, end downloading subtitles.')
     else:
         download_subtitle(subtitle_url, info_tuple[2])
 
     download_video(info_tuple)
 
-    print('爬取结束.')
+    print('over!')
